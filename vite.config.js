@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import path from 'node:path'
 import electron from 'vite-plugin-electron/simple'
+import svgLoader from 'vite-svg-loader'
 import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
@@ -26,5 +27,6 @@ export default defineConfig({
 					undefined
 					: {},
 		}),
+		svgLoader(),
 	],
 })
