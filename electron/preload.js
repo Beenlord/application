@@ -1,4 +1,5 @@
 import { ipcRenderer, contextBridge } from 'electron';
+import * as pkg from '../package.json';
 
 // --------- Expose some API to the Renderer process ---------
 contextBridge.exposeInMainWorld('ipcRenderer', {
@@ -21,4 +22,6 @@ contextBridge.exposeInMainWorld('ipcRenderer', {
 
   // You can expose other APTs you need here.
   // ...
+
+  ver: pkg.version,
 })

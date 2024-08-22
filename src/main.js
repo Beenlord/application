@@ -8,11 +8,13 @@ import Icon from './components/utils/Icon.vue'
 
 // View components
 import LoginView from './views/Login.vue'
+import HomeView from './views/Home.vue'
 
 const router = createRouter({
   history: createMemoryHistory(),
   routes: [
-    { path: '/', component: LoginView },
+    { name: 'login', component: LoginView },
+    { name: 'home', component: HomeView },
   ],
 });
 
