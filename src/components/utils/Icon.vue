@@ -14,6 +14,9 @@ const Async = defineAsyncComponent(() => {
 
 <style lang="scss">
 .Icon {
+	width: var(--i-size, 1em);
+	height: var(--i-size, 1em);
+	
 	path {
 		stroke: var(--i-stroke, currentColor);
 		fill: var(--i-fill, currentColor);

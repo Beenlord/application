@@ -6,7 +6,7 @@
 			placeholder="Personal access key"
 		/>
 		<div class="LoginForm__divider"></div>
-		<input type="submit" value="Enter" />
+		<input type="submit" value="Enter" cur-pointer />
 	</form>
 </template>
 
@@ -46,7 +46,6 @@ export default {
 
 	input[type='submit'] {
 		opacity: 0.8;
-		cursor: pointer;
 		transition: 0.2s opacity;
 	}
 
