@@ -1,5 +1,5 @@
 <template>
-	<form class="LoginForm" @submit.prevent="$emit('go', values.accessKey)">
+	<InputContainer tag="form" class="LoginForm" @submit.prevent="$emit('go', values.accessKey)">
 		<Icon id="encrypted" />
 		<input
 			v-model="values.accessKey"
@@ -8,7 +8,7 @@
 		/>
 		<div class="LoginForm__divider"></div>
 		<input type="submit" value="Enter" cur-pointer />
-	</form>
+	</InputContainer>
 </template>
 
 <script>
@@ -25,22 +25,15 @@ export default {
 
 <style lang="scss">
 .LoginForm {
-	width: 100%;
-	padding: 1rem 1.2rem;
-	display: flex;
-	align-items: center;
-	column-gap: 1.2rem;
-	border-radius: 1rem;
-	border: 1px solid rgba($color: #333, $alpha: 0.8);
-
+	padding-left: 1.4rem;
+	
 	.Icon-encrypted {
 		--i-size: 2.3rem;
 		--i-fill: lightgreen;
-		margin: 0 0.4rem 0 1rem;
 	}
 
 	input {
-		padding: 8px 0;
+		padding: 0.4rem 0;
 		color: currentColor;
 		background: transparent;
 		border: 1px solid transparent;
@@ -64,7 +57,7 @@ export default {
 	&__divider {
 		width: 1px;
 		height: 1.8rem;
-		background: rgba($color: #333, $alpha: 0.8);
+		background: rgba(#333, 0.8);
 	}
 }
 </style>

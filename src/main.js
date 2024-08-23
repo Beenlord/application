@@ -5,6 +5,7 @@ import App from './App.vue'
 
 // Global components
 import Icon from '@/components/utils/Icon.vue'
+import InputContainer from '@/components/ui/InputContainer.vue'
 
 // View components
 import LoginView from '@/views/Login.vue'
@@ -21,6 +22,7 @@ const router = createRouter({
 createApp(App)
   .use(router)
   .component('Icon', Icon)
+  .component('InputContainer', InputContainer)
   .mount('#app')
   .$nextTick(() => {
     // Use contextBridge

@@ -5,3 +5,10 @@
 [cur-default] { cursor: default }
 [cur-pointer] { cursor: pointer }
 [cur-copy] { cursor: copy }
+
+[hover-opacity] {
+    opacity: 0.8;
+    transition: 0.2s opacity;
+    
+    &:hover { opacity: 1 }
+}

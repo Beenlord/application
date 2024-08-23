@@ -1,6 +1,15 @@
 <template>
 	<div class="LoginView view">
-		<LoginForm @go="logIn" />
+		<div class="form-container">
+			<div class="form-container__row">
+				<LoginForm @go="logIn" />
+				<span>OR</span>
+				<InputContainer cur-pointer>
+					<Icon id="qr" cur-pointer />
+					<span>Scan QR</span>
+				</InputContainer>
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -26,8 +35,25 @@ function logIn(value) {
 	align-items: center;
 	justify-content: center;
 
+	.form-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 3rem;
+
+		&__row {
+			display: flex;
+			column-gap: 3rem;
+			align-items: center;
+		}
+	}
+
 	.LoginForm {
 		max-width: 320px;
+	}
+
+	.Icon-qr {
+		--i-size: 2.8rem;
 	}
 }
 </style>
