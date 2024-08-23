@@ -1,5 +1,6 @@
 <template>
 	<form class="LoginForm" @submit.prevent="$emit('go', values.accessKey)">
+		<Icon id="encrypted" />
 		<input
 			v-model="values.accessKey"
 			type="password"
@@ -32,8 +33,14 @@ export default {
 	border-radius: 1rem;
 	border: 1px solid rgba($color: #333, $alpha: 0.8);
 
+	.Icon-encrypted {
+		--i-size: 2.3rem;
+		--i-fill: lightgreen;
+		margin: 0 0.4rem 0 1rem;
+	}
+
 	input {
-		padding: 8px;
+		padding: 8px 0;
 		color: currentColor;
 		background: transparent;
 		border: 1px solid transparent;
