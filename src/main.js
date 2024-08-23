@@ -4,11 +4,11 @@ import './assets/styles/style.scss'
 import App from './App.vue'
 
 // Global components
-import Icon from './components/utils/Icon.vue'
+import Icon from '@/components/utils/Icon.vue'
 
 // View components
-import LoginView from './views/Login.vue'
-import HomeView from './views/Home.vue'
+import LoginView from '@/views/Login.vue'
+import HomeView from '@/views/Home.vue'
 
 const router = createRouter({
   history: createMemoryHistory(),

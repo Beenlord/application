@@ -8,7 +8,7 @@ import { defineAsyncComponent } from 'vue'
 const props = defineProps(['id'])
 
 const Async = defineAsyncComponent(() => {
-	return import(`../assets/icons/${props.id}.svg`)
+	return import(`@/assets/icons/${props.id}.svg`)
 })
 </script>
 

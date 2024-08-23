@@ -2,6 +2,7 @@
 	<!-- <p>Lorem, ipsum dolor.</p> -->
 	<RouterView />
 	<div class="debug-container">
+		<Icon id="check" /> <br />
 		<span>Version:</span> {{ ver }} <br />
 		<span>Route name:</span> {{ route.name }} <br />
 	</div>

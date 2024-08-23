@@ -6,8 +6,8 @@
 
 <script setup>
 import { ref } from 'vue'
-import { useRouter, useRoute } from 'vue-router'
-import LoginForm from '../components/LoginForm.vue'
+import { useRouter } from 'vue-router'
+import LoginForm from '@/components/LoginForm.vue'
 
 const router = useRouter()
 
