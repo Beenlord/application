@@ -1,12 +1,12 @@
 :root {
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-	line-height: 1.5;
+	line-height: 1.2;
 	font-weight: 400;
 
 	font-size: 8px;
 
 	color-scheme: light dark;
-	color: rgba(255, 255, 255, 0.87);
+	color: rgba(255, 255, 255, 0.77);
 	background: #242424;
 
 	font-synthesis: none;
@@ -27,6 +27,18 @@
 html,
 body {
 	font-size: 1.75rem;
+}
+
+input,
+button {
+	align-self: baseline;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	font-family: inherit;
+	display: inline-block;
+	height: 100%;
+	border: 1px solid rgba(red, 0.5);
 }
 
 #app {

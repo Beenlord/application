@@ -5,7 +5,7 @@
 				<LoginForm @go="logIn" />
 				<span>OR</span>
 				<InputContainer cur-pointer>
-					<Icon id="qr" cur-pointer />
+					<!-- <Icon id="qr" cur-pointer /> -->
 					<span>Scan QR</span>
 				</InputContainer>
 			</div>

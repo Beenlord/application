@@ -28,12 +28,11 @@ export default {
 	padding-left: 1.4rem;
 	
 	.Icon-encrypted {
-		--i-size: 2.3rem;
+		// --i-size: 2.3rem;
 		--i-fill: lightgreen;
 	}
 
 	input {
-		padding: 0.4rem 0;
 		color: currentColor;
 		background: transparent;
 		border: 1px solid transparent;
