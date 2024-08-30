@@ -32,9 +32,16 @@ function createWindow() {
     webPreferences: {
       preload: path.join(__dirname, 'preload.mjs'),
     },
-    transparent: true,
-    titleBarStyle: 'hidden',
-    titleBarOverlay: true,
+
+    ...{
+      win: {
+        transparent: true,
+        titleBarStyle: 'hidden',
+        titleBarOverlay: {
+          height: 0,
+        },
+      },
+    }[process.platform],
   });
 
   // Test active push message to Renderer-process.

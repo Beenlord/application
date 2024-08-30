@@ -24,4 +24,5 @@ contextBridge.exposeInMainWorld('ipcRenderer', {
   // ...
 
   ver: pkg.version,
+  os: process.platform,
 })
