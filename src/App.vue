@@ -1,6 +1,5 @@
 <template>
 	<v-app :theme="currentTheme">
-		<SystemBar />
 		<v-app-bar title="Login" elevation="7">
 			<v-btn
 				:icon="themeList[currentTheme]"
@@ -16,7 +15,6 @@
 </template>
 
 <script setup>
-import SystemBar from '@/components/SystemBar.vue'
 import { ref } from 'vue'
 const currentTheme = ref('dark')
 
